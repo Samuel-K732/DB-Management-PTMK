@@ -4,7 +4,7 @@ from timer import perf_timer
 
 
 class DBManager:
-    def __init__(self, session: Session) -> None:
+    def __init__(self, session: Session):
         self.session = session
 
     def insert(self, obj: Employee) -> None:
