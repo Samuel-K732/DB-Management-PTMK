@@ -4,8 +4,8 @@
 Python 3.10+
 
 ## Подготовка:
-- Клонировать репозиторий git clone https://github.com/Samuel-K732/DB-Management-PTMK
-- Установить зависимости pip install -r requirements.txt
+- Клонировать репозиторий ```git clone https://github.com/Samuel-K732/DB-Management-PTMK```
+- Установить зависимости ```pip install -r requirements.txt```
 
 ## Использование:
 ### Режим 1 - Создание таблицы
