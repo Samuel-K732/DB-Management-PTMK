@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from models import Base, Employee
 import sys
@@ -75,6 +75,8 @@ elif mode == "6":
                            "все данные из таблицы сотрудников?\n(y/n): ").lower() == "y":
             session.query(Employee).delete()
             session.commit()
+            with engine.connect() as conn:
+                conn.execute(text("VACUUM"))
             print("Данные удалены")
         else:
             print("Отмена удаления")
