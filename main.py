@@ -13,7 +13,6 @@ Session = sessionmaker(bind=engine)
 mode = sys.argv[1]
 
 if mode == "1":
-    Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
 
 elif mode == "2":
