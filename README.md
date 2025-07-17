@@ -1,5 +1,8 @@
 ## Консольное приложение для работы с базой данных (Python + SQLAlchemy(SQLite))
 
+## Требования для запуска:
+Python 3.10+
+
 ## Подготовка:
 - Клонировать репозиторий git clone https://github.com/Samuel-K732/DB-Management-PTMK
 - Установить зависимости pip install -r requirements.txt
